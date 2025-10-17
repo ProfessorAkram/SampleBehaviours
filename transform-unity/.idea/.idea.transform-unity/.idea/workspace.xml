@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="56a078e9-7ef3-4647-96fa-a81ff3a52553" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.transform-unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.transform-unity/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptTemplates/1-CSG Templates__MonoBehaviour Script-MonoBehaviourBasic.cs.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptTemplates/1-CSG Templates__MonoBehaviour Script-MonoBehaviourBasic.cs.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptTemplates/2-CSG Templates__MonoBehaviour Script-MonoBehaviourLifecycle.cs.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptTemplates/3-CSG Templates__MonoBehaviour Script-MonoBehaviourFieldsProperties.cs.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +118,7 @@
       <option name="presentableId" value="Default" />
       <updated>1760740988348</updated>
       <workItem from="1760740990235" duration="5000" />
-      <workItem from="1760742921483" duration="1597000" />
+      <workItem from="1760742921483" duration="2341000" />
     </task>
     <servers />
   </component>
