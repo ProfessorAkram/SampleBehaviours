@@ -1,0 +1,75 @@
+/************************************************************
+* COPYRIGHT:  Year
+* PROJECT: Name of Project or Assignment
+* FILE NAME: #SCRIPTNAME#.cs
+* DESCRIPTION: Short Description of script.
+*                   
+* REVISION HISTORY:
+* Date [YYYY/MM/DD] | Author | Comments
+* ------------------------------------------------------------
+* 2000/01/01 | Your Name | Created class
+*
+*
+************************************************************/
+ 
+using UnityEngine;
+ 
+#ROOTNAMESPACEBEGIN#
+
+
+// Script requires the GameObject to have a Rigidbody component
+[RequireComponent(typeof(Rigidbody))]
+public class #SCRIPTNAME# : MonoBehaviour
+{
+    private Rigidbody _rigidBody;
+    
+ 
+    // Awake is called once on initialization (before Start)
+    private void Awake()
+    {
+        _rigidBody = GetComponent<Rigidbody>();
+    
+        #NOTRIM#
+        
+    } //end Awake()
+ 
+ 
+    // Start is called once before the first Update
+    private void Start()
+    {
+        #NOTRIM#
+        
+    } //end Start()
+    
+    
+    // FixedUpdate is called on a fixed time interval (used for physics)
+    private void FixedUpdate()
+    {
+        #NOTRIM#
+        
+    } //end FixedUpdate()
+ 
+ 
+    // Update is called once per frame
+    private void Update()
+    {
+        #NOTRIM#
+        
+    } //end Update()
+ 
+ 
+    /// <summary>
+    /// A custom method example.
+    /// </summary>
+    /// <param name="exampleParameter"> A parameter that demonstrates passing data to the method.
+    ///</param>
+    private void CustomMethod(int exampleParameter)
+    {
+        #NOTRIM#
+        
+    }//end CustomMethod(int)
+ 
+ 
+ 
+}//end #SCRIPTNAME#
+#ROOTNAMESPACEEND#

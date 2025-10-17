@@ -1,0 +1,112 @@
+/************************************************************
+* COPYRIGHT:  Year
+* PROJECT: Name of Project or Assignment
+* FILE NAME: #SCRIPTNAME#.cs
+* DESCRIPTION: Short Description of script.
+*                   
+* REVISION HISTORY:
+* Date [YYYY/MM/DD] | Author | Comments
+* ------------------------------------------------------------
+* 2000/01/01 | Your Name | Created class
+*
+*
+************************************************************/
+ 
+using UnityEngine;
+ 
+#ROOTNAMESPACEBEGIN#
+
+public class #SCRIPTNAME# : MonoBehaviour
+{
+ 
+    // Reset is called when the script is first attached or Reset is pressed
+    private void Reset()
+    {
+        #NOTRIM#
+        
+    } //end Reset()
+    
+    
+    // Awake is called once on initialization (before Start)
+    private void Awake()
+    {
+        #NOTRIM#
+        
+    } //end Awake()
+    
+    
+    // OnEnable is called when the object becomes enabled and active
+    private void OnEnable()
+    {
+        #NOTRIM#
+        
+    } //end OnEnable()
+    
+    
+    // Start is called once before the first Update
+    private void Start()
+    {
+        #NOTRIM#
+        
+    } //end Start()
+    
+    
+    // FixedUpdate is called on a fixed time interval (used for physics)
+    private void FixedUpdate()
+    {
+        #NOTRIM#
+        
+    } //end FixedUpdate()
+    
+    
+    // Update is called once per frame
+    private void Update()
+    {
+        #NOTRIM#
+        
+    } //end Update()
+    
+    
+    // LateUpdate is called after all Update functions have been called
+    private void LateUpdate()
+    {
+        #NOTRIM#
+        
+    } //end LateUpdate()
+    
+    
+    // OnTriggerEnter is called when a Collider marked as Trigger is entered
+    private void OnTriggerEnter(Collider other)
+    {
+        #NOTRIM#
+        
+    } //end OnTriggerEnter()
+    
+    
+    // OnCollisionEnter is called when a collision occurs with a non-trigger Collider
+    private void OnCollisionEnter(Collision collision)
+    {
+        #NOTRIM#
+        
+    } //end OnCollisionEnter()
+    
+    
+    // OnDisable is called when the object becomes disabled or inactive
+    private void OnDisable()
+    {
+        #NOTRIM#
+        
+    } //end OnDisable()
+    
+    
+    // OnDestroy is called when the object is destroyed
+    private void OnDestroy()
+    {
+        #NOTRIM#
+        
+    } //end OnDestroy()
+
+ 
+ 
+}//end #SCRIPTNAME#
+#ROOTNAMESPACEEND#

@@ -1,0 +1,122 @@
+/************************************************************
+* COPYRIGHT:  Year
+* PROJECT: Name of Project or Assignment
+* FILE NAME: #SCRIPTNAME#.cs
+* DESCRIPTION: Short Description of script.
+*                   
+* REVISION HISTORY:
+* Date [YYYY/MM/DD] | Author | Comments
+* ------------------------------------------------------------
+* 2000/01/01 | Your Name | Created class
+*
+*
+************************************************************/
+ 
+using UnityEngine;
+ 
+#ROOTNAMESPACEBEGIN#
+
+public class #SCRIPTNAME# : MonoBehaviour
+{
+
+    // ===== Example Inspector Fields =====
+    
+    // Header creates a label in the Inspector
+    [Header("Class Settings")]
+    
+    // SerializeField exposes private fields in the Inspector
+    [SerializeField] 
+    // Tooltip adds hover text
+    [Tooltip("Description of Field")]
+    private float _exampleVariable = 5f;
+    
+    
+     // ===== Example Read-Only Property =====
+     // Allows OTHER scripts access the value
+     // without being able to modify it directly.
+     public float ExampleVariable
+     {
+        get { return _exampleVariable; }
+          
+        // No setter = read-only from outside
+                
+     }
+
+/* Remove comments if implementing     
+     // ===== Example Full Property  =====
+     // Allows OTHER scripts access and modify the value
+     public float ExampleVariable
+     {
+            get { return _exampleVariable; }
+            set {  _example = value}
+            
+     }
+*/
+
+/* Remove comments if implementing     
+     // ===== Example Shorthand Full Property  =====
+
+     public float ExampleVariable { get,set }
+
+*/
+
+/* Remove comments if implementing     
+    // ===== Example of Property Validation =====
+    // VALIDATES modified values from OTHER scripts 
+    // before setting them
+    
+    public float ExampleVariable
+    {
+        get { return _exampleVariable; }
+        set
+        {
+            // Ensure value is not negative
+            if (value < 0)
+            {
+                value = 0;
+            }
+    
+            _exampleVariable = value;
+        }
+    }
+*/
+
+
+    // Awake is called once on initialization (before Start)
+    private void Awake()
+    {
+        #NOTRIM#
+        
+    } //end Awake()
+ 
+ 
+    // Start is called once before the first Update
+    private void Start()
+    {
+        #NOTRIM#
+        
+    } //end Start()
+ 
+ 
+    // Update is called once per frame
+    private void Update()
+    {
+        #NOTRIM#
+        
+    } //end Update()
+ 
+ 
+    /// <summary>
+    /// A custom method example.
+    /// </summary>
+    /// <param name="exampleParameter"> A parameter that demonstrates passing data to the method.
+    ///</param>
+    private void CustomMethod(int exampleParameter)
+    {
+        #NOTRIM#
+        
+    }//end CustomMethod(int)
+ 
+ 
+}//end #SCRIPTNAME#
+#ROOTNAMESPACEEND#
