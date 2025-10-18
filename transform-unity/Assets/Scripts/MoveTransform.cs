@@ -2,7 +2,14 @@
  * COPYRIGHT:  2025
  * PROJECT: Sandbox
  * FILE NAME: MoveTransform.cs
- * DESCRIPTION: Move object with Transform.Position
+ * 
+ * DESCRIPTION: Moves an object each frame using either Transform.position 
+ *              or Transform.Translate, based on user preference.
+ *              Movement is frame-rate independent (multiplied by Time.deltaTime)
+ *              and uses world coordinates by default. 
+ *              Speed and direction are validated via public properties.
+ * 
+ * USAGE: Attach to any GameObject to move it automatically on Awake or via Move() calls.
  *
  * REVISION HISTORY:
  * Date [YYYY/MM/DD] | Author | Comments
@@ -27,6 +34,10 @@ public class MoveTransform : MonoBehaviour
 
         
     // ===== Inspector Fields =====
+    
+    [SerializeField]
+    [Tooltip("Use Translate to move along the object's local axes.")]
+    private bool _useTranslate = false;
     
     [SerializeField]
     [Range(0f, MAX_SPEED)]
@@ -108,8 +119,24 @@ public class MoveTransform : MonoBehaviour
         // Flags the object as moving
         _isMoving = true;
 
-        // Move the GameObject using the resolved frame values
-        transform.position += Speed * Time.deltaTime * Direction;
+
+       // Move with Translate or Position
+        if (_useTranslate)
+        {
+            
+            // This moves relative to the object's local axes by default
+            transform.Translate(Speed * Time.deltaTime * Direction);
+        }
+        else
+        {
+            // Move the object by directly updating its world position
+            transform.position += Speed * Time.deltaTime * Direction;
+            
+        }//end if (_useTranslate)
+            
+        
+ 
+
 
     }//end Move()
     
