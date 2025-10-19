@@ -124,6 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14609c5f764c5124581008837081c350, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveTransform
+  _useTranslate: 0
   _speed: 5
   _direction: {x: -1, y: 0, z: 0}
   _moveOnAwake: 1

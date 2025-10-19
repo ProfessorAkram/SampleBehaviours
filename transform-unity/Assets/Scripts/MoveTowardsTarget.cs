@@ -16,8 +16,9 @@
  *
  *
  ************************************************************/
- 
 
+
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class MoveTowardsTarget : MonoBehaviour
@@ -43,9 +44,8 @@ public class MoveTowardsTarget : MonoBehaviour
              "Cannot exceed maximum speed.")]
     private float _speed = 5f;
     
-    
     [SerializeField]
-    [Tooltip("Enable to move objec towards target on Start.")]
+    [Tooltip("Enable to move object towards target on Start.")]
     private bool _moveOnStart = true;
     
     [SerializeField]
@@ -102,13 +102,14 @@ public class MoveTowardsTarget : MonoBehaviour
     /// <summary>
     /// Moves the object in a specified direction at a specified speed.
     /// </summary>
-    /// <param name="target">The transform off the game object to move towards.</param>
-    /// <param name="speed">The speed at which the object should move (optional).</param>
-    public void Move(Transform target = null, float? speed = null)
+    /// <param name="target">The transform off the game object to move towards (optional).</param>
+    /// <param name="speed">The speed at which the object should rotate (optional).</param>
+    public void Move([CanBeNull] Transform target = null, float? speed = null)
     {
-        // Use the passed target or fall back to the default inspector-assigned target
+        // Use the passed values or fall back to the default inspector-assigned values
         Transform currentTarget = target ?? Target;
 
+        // If null target Return (exit Move)
         if (currentTarget == null)
         {
             Debug.LogWarning("Move called but target is null!");
@@ -116,7 +117,6 @@ public class MoveTowardsTarget : MonoBehaviour
             return;
         }
         
-        // Resolve the effective values for this frame
         float moveSpeed = speed ?? Speed;
 
         // Update properties to ensure validation and internal consistency
@@ -125,15 +125,14 @@ public class MoveTowardsTarget : MonoBehaviour
         // Get target's position
         Vector3 targetPosition = currentTarget.position;
 
-        // Check if Y is Locked, then set target Y to this object's Y position
-        if (_lockY)
-        {
-            targetPosition.y = transform.position.y;
-        }
+        // Ignore the target's vertical difference
+        targetPosition.y = transform.position.y;
 
-        
         // Flags the object as moving
         _isMoving = true;
+        
+        // Look at target position (rotate)
+        transform.LookAt(targetPosition);
         
         // Move toward the target using MoveTowards
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, Speed * Time.deltaTime);

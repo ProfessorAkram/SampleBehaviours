@@ -1,13 +1,17 @@
 /************************************************************
-* COPYRIGHT:  Year
-* PROJECT: Name of Project or Assignment
+* COPYRIGHT:  2025
+* PROJECT: Sandbox
 * FILE NAME: FollowMouse.cs
-* DESCRIPTION: Short Description of script.
-*                   
+* DESCRIPTION: Rotates or moves an object to follow the mouse position each frame.
+*              Converts screen-space mouse coordinates into world-space or raycast targets.
+*              Can be configured for 2D or 3D and optionally lock specific axes.
+* 
+* USAGE: Attach to a GameObject and configure how it tracks the mouse in the Inspector.
+* 
 * REVISION HISTORY:
 * Date [YYYY/MM/DD] | Author | Comments
 * ------------------------------------------------------------
-* 2000/01/01 | Your Name | Created class
+* 2025/10/18 | Akram Taghavi-Burris | Created class
 *
 *
 ************************************************************/
@@ -87,7 +91,8 @@ public class FollowMouse : MonoBehaviour
     {
         Vector3 mousePosition = GetMouseWorldPosition();
         
-        // Move toward the mouse
+        
+        // Linearly interpolate the object towards the mouse
         transform.position = Vector3.Lerp(transform.position, mousePosition, _speed * Time.deltaTime);
     }
     

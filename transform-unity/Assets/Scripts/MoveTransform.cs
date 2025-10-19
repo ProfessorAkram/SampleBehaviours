@@ -105,7 +105,7 @@ public class MoveTransform : MonoBehaviour
     /// <param name="speed">The speed at which the object should move (optional).</param>
     public void Move(Vector3? direction = null, float? speed = null)
     {
-        // Resolve the effective values for this frame
+        // Use the passed values or fall back to the default inspector-assigned values
         Vector3 moveDirection = direction ?? Direction;
         float moveSpeed = speed ?? Speed;
 

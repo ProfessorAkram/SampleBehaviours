@@ -11660,7 +11660,7 @@ GameObject:
   - component: {fileID: 1885667618}
   - component: {fileID: 1885667617}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: Cameras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12042,6 +12042,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1471177214}
     m_Modifications:
+    - target: {fileID: 801176327158301312, guid: 45a353de0c799774bb3ab4f446424b5f, type: 3}
+      propertyPath: _useObjectZ
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2502404625490080582, guid: 45a353de0c799774bb3ab4f446424b5f, type: 3}
       propertyPath: m_Name
       value: Fish
