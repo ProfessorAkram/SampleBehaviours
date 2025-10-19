@@ -97,26 +97,19 @@ public class RotateTransform : MonoBehaviour
         }//end if(_isRotating)
         
     } //end Update()
- 
+    
  
     /// <summary>
     /// Rotates the object around a specified axis at the current rotation speed.
     /// </summary>
-    /// <param name="axis">The axis to rotate around. If null, the default _rotationAxis is used (optional).</param>
     /// <param name="speed">The speed at which the object should rotate (optional).</param>
-    public void RotateObject(Vector3? axis  = null, float? speed = null)
+    public void RotateObject(float? speed = null)
     {
-        // Use the passed values or fall back to the default inspector-assigned values
-        Vector3 rotationAxis = axis ?? _axis;
-        float rotationSpeed = speed ?? Speed;
-        
-        //Debug.Log(rotationAxis);
-        
-        // Update properties to ensure validation and internal consistency
-        Speed = rotationSpeed;
+        // Use the provided speed values if not null; otherwise keep the current Speed
+        Speed = speed ?? Speed;
         
         // Apply rotation
-        transform.Rotate(rotationSpeed * Time.deltaTime * rotationAxis, _useWorldSpace ? Space.World : Space.Self);
+        transform.Rotate(Speed * Time.deltaTime * _axis, _useWorldSpace ? Space.World : Space.Self);
         
     } // end RotateObject()
 

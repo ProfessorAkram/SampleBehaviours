@@ -97,6 +97,25 @@ public class MoveTransform : MonoBehaviour
         }//end if(_isMoving)
 
     }//end Update()
+
+
+    /// <summary>
+    /// Resolves movement values or fall back to the default
+    /// </summary>
+    /// <param name="direction"> 
+    /// Direction value, if null, use existing direction (optional).
+    /// </param>
+    /// <param name="speed">
+    /// Speed value, if null, use existing speed (optional).
+    /// </param>
+    private void ResolveMovementValues(Vector3? direction, float? speed)
+    {
+        // Use the provided values if not null; otherwise keep the current Direction and Speed
+        Direction = direction ?? Direction;
+        Speed = speed ?? Speed;
+        
+    }//end ResolveMovementValues()
+    
      
     /// <summary>
     /// Moves the object in a specified direction at a specified speed.
@@ -105,14 +124,10 @@ public class MoveTransform : MonoBehaviour
     /// <param name="speed">The speed at which the object should move (optional).</param>
     public void Move(Vector3? direction = null, float? speed = null)
     {
-        // Use the passed values or fall back to the default inspector-assigned values
-        Vector3 moveDirection = direction ?? Direction;
-        float moveSpeed = speed ?? Speed;
 
-        // Update properties to ensure validation and internal consistency
-        Direction = moveDirection;
-        Speed = moveSpeed;
-
+        // Resolve the values for direction and speed
+        ResolveMovementValues(direction, speed);
+        
         //Debug.Log("Direction: " + Direction);
         //Debug.Log("Speed " + Speed);
         
@@ -133,12 +148,9 @@ public class MoveTransform : MonoBehaviour
             transform.position += Speed * Time.deltaTime * Direction;
             
         }//end if (_useTranslate)
-            
         
- 
-
-
     }//end Move()
+    
     
     /// <summary>
     /// Stops the object's movement by updating the movement flag.

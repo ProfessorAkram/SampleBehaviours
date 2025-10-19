@@ -2789,7 +2789,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RotateTransform
   _useWorldSpace: 1
   _rotationAxis: 1
-  _rotationSpeed: 60
+  _speed: 60
   _rotateOnAwake: 1
 --- !u!43 &1466121232
 Mesh:
@@ -4058,7 +4058,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RotateTransform
   _useWorldSpace: 1
   _rotationAxis: 1
-  _rotationSpeed: 60
+  _speed: 60
   _rotateOnAwake: 1
 --- !u!1001 &2052510768
 PrefabInstance:
@@ -4908,7 +4908,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RotateTransform
   _useWorldSpace: 1
   _rotationAxis: 1
-  _rotationSpeed: 60
+  _speed: 60
   _rotateOnAwake: 1
 --- !u!1001 &7554783950505778705
 PrefabInstance:

@@ -53,8 +53,8 @@ public class MoveTowardsTarget : MonoBehaviour
     private bool _stopOnTarget = true;
     
     [SerializeField]
-    [Tooltip("Keep the object's Y position constant while moving toward the target.")]
-    private bool _lockY = true;
+    [Tooltip("Rotates object to look at (face) target while moving")]
+    private bool _lookAtTarget = true;
     
     // ===== Public Properties =====
     
@@ -98,56 +98,76 @@ public class MoveTowardsTarget : MonoBehaviour
         }//end if(_isMoving)
 
     }//end Update()
+    
+    private bool IsTargetValid(Transform target)
+    {
+        // Use the passed values or fall back to the default inspector-assigned values
+        Transform currentTarget = target ?? Target;
+        
+        //Set target to current target
+        Target = currentTarget;
+
+        // If null target Return (exit Move)
+        if (currentTarget == null)
+        {
+            Debug.LogWarning("Move called but target is null!");
+            return false;
+        }
+        
+        return true;
+        
+    }//end IsTargetValid()
      
     /// <summary>
     /// Moves the object in a specified direction at a specified speed.
     /// </summary>
     /// <param name="target">The transform off the game object to move towards (optional).</param>
     /// <param name="speed">The speed at which the object should rotate (optional).</param>
-    public void Move([CanBeNull] Transform target = null, float? speed = null)
+    public void Move(Transform target = null, float? speed = null)
     {
-        // Use the passed values or fall back to the default inspector-assigned values
-        Transform currentTarget = target ?? Target;
-
-        // If null target Return (exit Move)
-        if (currentTarget == null)
+        // If not valid target found stop moving, and exit method
+        if (!IsTargetValid(target))
         {
-            Debug.LogWarning("Move called but target is null!");
             _isMoving = false;
             return;
-        }
+            
+        }//end if (!IsTargetValid)
         
-        float moveSpeed = speed ?? Speed;
-
-        // Update properties to ensure validation and internal consistency
-        Speed = moveSpeed;
+        // Use the provided speed values if not null; otherwise keep the current Speed
+        Speed = speed ?? Speed;
         
-        // Get target's position
-        Vector3 targetPosition = currentTarget.position;
+        // Reference to Target's position
+        Vector3 targetPosition = Target.position;
 
-        // Ignore the target's vertical difference
+        // Ignore vertical difference, to stay upright and only rotate around Y
         targetPosition.y = transform.position.y;
 
         // Flags the object as moving
         _isMoving = true;
         
-        // Look at target position (rotate)
-        transform.LookAt(targetPosition);
+        // If enabled, rotate the object to face the target while moving.
+        // The rotation will snap instantly the object's forward vector toward the target position.
+        if (_lookAtTarget)
+        {
+            transform.LookAt(targetPosition);
+            
+        }// end if (_lookAtTarget)
         
         // Move toward the target using MoveTowards
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, Speed * Time.deltaTime);
         
-        Debug.Log("Target's Position: " + targetPosition);
-        Debug.Log("Object's Positon " + transform.position);
+        //Debug.Log("Target's Position: " + targetPosition);
+        //Debug.Log("Object's Positon " + transform.position);
 
         // Optional: stop moving when object reaches the target
         if (_stopOnTarget && (transform.position == targetPosition))
         {
             _isMoving = false;
-        }
-        
+            
+        }//end if(_stopOnTarget)
         
     }//end Move()
+    
     
     /// <summary>
     /// Stops the object's movement by updating the movement flag.
