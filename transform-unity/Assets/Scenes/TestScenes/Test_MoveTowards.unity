@@ -1268,7 +1268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fb76135f842b834492ddae5cade3ce2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveTowardsTarget
-  Target: {fileID: 7858153218267853250}
+  _target: {fileID: 7858153218267853250}
   _speed: 5
   _moveOnStart: 1
   _stopOnTarget: 1

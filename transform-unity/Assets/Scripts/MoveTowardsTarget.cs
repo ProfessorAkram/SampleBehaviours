@@ -36,7 +36,7 @@ public class MoveTowardsTarget : MonoBehaviour
     
     [SerializeField]
     [Tooltip("Target object to move towards")]
-    private Transform Target;
+    private Transform _target;
     
     [SerializeField]
     [Range(0f, MAX_SPEED)]
@@ -57,6 +57,11 @@ public class MoveTowardsTarget : MonoBehaviour
     private bool _lookAtTarget = true;
     
     // ===== Public Properties =====
+
+    public Transform Target 
+    {   get => _target; 
+        set => _target = value; 
+    }
     
     public float Speed
     {
