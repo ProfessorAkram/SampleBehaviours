@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56a078e9-7ef3-4647-96fa-a81ff3a52553" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScenes/Test_Rotate.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScenes/Test_Rotate.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MoveTowardsTarget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MoveTowardsTarget.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShrinkGrow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShrinkGrow.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,12 +22,12 @@
     &quot;assignee&quot;: &quot;ProfessorAkram&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ProfessorAkram/Transform.git",
-    "accountId": "eadfa71c-7c41-43f0-bdab-a029ea234138"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ProfessorAkram/Transform.git&quot;,
+    &quot;accountId&quot;: &quot;eadfa71c-7c41-43f0-bdab-a029ea234138&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LookAtTargetFree.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoveTowardsTarget.cs" root0="FORCE_HIGHLIGHTING" />
@@ -129,6 +126,7 @@
       <workItem from="1760842226320" duration="13474000" />
       <workItem from="1760891165867" duration="17451000" />
       <workItem from="1760986213234" duration="58000" />
+      <workItem from="1760996348841" duration="3607000" />
     </task>
     <servers />
   </component>
