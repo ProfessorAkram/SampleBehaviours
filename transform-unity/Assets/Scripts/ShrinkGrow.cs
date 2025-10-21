@@ -85,7 +85,7 @@ public class ShrinkGrow : MonoBehaviour
     
     [SerializeField]
     [Tooltip("Enable to shrink/grow on Start.")]
-    private bool _moveOnStart = true;
+    private bool _scaleOnStart = true;
     
     [SerializeField]
     [Tooltip("Choose the end behavior to use.\n"+
@@ -109,17 +109,18 @@ public class ShrinkGrow : MonoBehaviour
         
         CheckScaleMode();
 
+        if (_scaleOnStart)
+        {
+            if 
+        }
+
     } //end Start()
  
  
     // Update is called once per frame
     private void Update()
     {
-        if (_isGrowing)
-        {
-            Grow();
-        }
-        
+
     } //end Update()
  
     /// <summary>
@@ -157,15 +158,15 @@ public class ShrinkGrow : MonoBehaviour
     {
         switch (_endBehavior)
         {
-            case _endBehavior.Stop:
+            case EndBehavior.Stop:
+                Debug.Log("Stop");
+                break;
+            
+            case EndBehavior.Loop:
                 _isGrowing = false;
                 break;
             
-            case ScaleMode.Shrink:
-                _isGrowing = false;
-                break;
-            
-            case ScaleMode.ShrinkGrow:
+            case EndBehavior.Reset:
                 _isGrowing = true;
                 break;
             
