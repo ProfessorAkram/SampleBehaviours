@@ -6,8 +6,26 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/Bootstrap.unity
+    guid: be1a8bf5d0ac70a4aa8e6d9a95a7773a
+  - enabled: 1
+    path: Assets/Scenes/Menus/MainMenu.unity
+    guid: c31f01a3bb373f64ab07f9afe7414238
+  - enabled: 1
+    path: Assets/Scenes/Menus/GameOver.unity
+    guid: 770d2a6da8eb62546b712f11157b8ca0
+  - enabled: 1
+    path: Assets/Scenes/TestScenes/Test_ClampRoateTowards.unity
+    guid: 4cb0cdc7f5ffd274786f2edacdbb8e74
+  - enabled: 1
+    path: Assets/Scenes/TestScenes/Test_MoveTowards.unity
+    guid: da7cf94270ae80846be3b76f290dc6b6
+  - enabled: 1
+    path: Assets/Scenes/TestScenes/Test_LookAtFree.unity
+    guid: 982ad2ed862037a48b189de1b7fe748f
+  - enabled: 1
+    path: Assets/Scenes/Menus/PauseMenu.unity
+    guid: 29406bf0f276c9440b7b856b091d1812
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

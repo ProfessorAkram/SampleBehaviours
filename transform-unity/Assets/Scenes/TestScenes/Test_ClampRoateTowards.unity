@@ -2342,7 +2342,13 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7833812777858497231, guid: 15facac45049d1148a79a4a66c56a80a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1219919251}
+      addedObject: {fileID: 1219919249}
+    - targetCorrespondingSourceObject: {fileID: 7833812777858497231, guid: 15facac45049d1148a79a4a66c56a80a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1219919253}
+    - targetCorrespondingSourceObject: {fileID: 7833812777858497231, guid: 15facac45049d1148a79a4a66c56a80a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1219919254}
   m_SourcePrefab: {fileID: 100100000, guid: 15facac45049d1148a79a4a66c56a80a, type: 3}
 --- !u!4 &1191404109 stripped
 Transform:
@@ -2456,7 +2462,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7833812777858497231, guid: 15facac45049d1148a79a4a66c56a80a, type: 3}
   m_PrefabInstance: {fileID: 1191404108}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1219919251
+--- !u!114 &1219919249
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2465,14 +2471,55 @@ MonoBehaviour:
   m_GameObject: {fileID: 1219919247}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fb76135f842b834492ddae5cade3ce2, type: 3}
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MoveTowardsTarget
-  _target: {fileID: 510235609}
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
+  m_Actions: {fileID: -944628639613478452, guid: a6fc5df8c5edade4eae43b176df47ab5, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: Keyboard & Mouse
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &1219919253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219919247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d799e983c6642f4a92b4aae8bae3f8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+--- !u!114 &1219919254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219919247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14609c5f764c5124581008837081c350, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MoveTransform
+  _useTranslate: 0
   _speed: 5
-  _moveOnStart: 1
-  _stopOnTarget: 1
-  _lookAtTarget: 1
+  _direction: {x: 1, y: 0, z: 0}
+  _moveOnAwake: 0
 --- !u!1001 &1406029034
 PrefabInstance:
   m_ObjectHideFlags: 0
