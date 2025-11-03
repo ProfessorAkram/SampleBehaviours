@@ -111,7 +111,7 @@ public class ShrinkGrow : MonoBehaviour
 
         if (_scaleOnStart)
         {
-            if 
+            //if 
         }
 
     } //end Start()
