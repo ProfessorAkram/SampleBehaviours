@@ -40,7 +40,7 @@ public class MoveTowardsTarget : MonoBehaviour
     
     [SerializeField]
     [Range(0f, MAX_SPEED)]
-    [Tooltip("Speed of object (units per second). " +
+    [Tooltip("Speed of object (units per second).\n " +
              "Cannot exceed maximum speed.")]
     private float _speed = 5f;
     

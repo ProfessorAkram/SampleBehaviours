@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="56a078e9-7ef3-4647-96fa-a81ff3a52553" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.transform-unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.transform-unity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScenes/Test_ClampRoateTowards.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScenes/Test_ClampRoateTowards.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShrinkGrow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShrinkGrow.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,13 +25,11 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/ProfessorAkram/Transform.git&quot;,
-    &quot;accountId&quot;: &quot;33a75bb5-a8a7-4b62-9a3f-e139f3962418&quot;
+    &quot;accountId&quot;: &quot;eadfa71c-7c41-43f0-bdab-a029ea234138&quot;
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BaseClasses/Singleton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LookAtTargetFree.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoveTowardsTarget.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RotateTowardsTarget.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RotateTransform.cs" root0="FORCE_HIGHLIGHTING" />
@@ -128,8 +125,9 @@
       <workItem from="1760742921483" duration="17953000" />
       <workItem from="1760842226320" duration="13474000" />
       <workItem from="1760891165867" duration="17451000" />
-      <workItem from="1762047036832" duration="7700000" />
-      <workItem from="1762130767408" duration="1660000" />
+      <workItem from="1760986213234" duration="58000" />
+      <workItem from="1760996348841" duration="3607000" />
+      <workItem from="1761061250270" duration="2475000" />
     </task>
     <servers />
   </component>
