@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56a078e9-7ef3-4647-96fa-a81ff3a52553" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShrinkGrow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShrinkGrow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.transform-unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.transform-unity/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputAssets/PlayerControls.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputAssets/PlayerControls.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menus/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menus/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menus/PauseMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menus/PauseMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,6 +132,7 @@
       <workItem from="1760996348841" duration="3607000" />
       <workItem from="1761061250270" duration="2475000" />
       <workItem from="1761097360565" duration="31000" />
+      <workItem from="1762196498627" duration="1464000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,13 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/General/USS-Styles/UI-GlobalStyles.uss?fileID=7433441132597879392&amp;guid=b665921db076fe04cb8508ed16a4cac3&amp;type=3#UI-GlobalStyles" />
+    <ui:VisualElement name="MainContainer" style="flex-grow: 1; top: 5%;">
+        <ui:VisualElement name="Header" style="flex-grow: 1;">
+            <ui:Label text="Adventure" class="title" />
+        </ui:VisualElement>
+        <ui:Button text="Play" parse-escape-sequences="true" name="Play_Btn" class="button" />
+        <ui:Button text="Exit Game" name="Exit_Btn" class="button" />
+        <ui:VisualElement name="Footer" style="flex-grow: 1; height: auto; max-height: 20%; -unity-text-align: upper-center; align-items: flex-start; bottom: 0; position: absolute;">
+            <ui:Label text="Designed by Stu Dent" name="Label" class="note" style="-unity-text-align: upper-center; white-space: normal; height: auto; flex-grow: 1;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

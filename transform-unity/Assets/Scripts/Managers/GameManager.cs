@@ -90,7 +90,7 @@ public class GameManager: Singleton<GameManager>
     void Start()
     {
         // Set the initial game state to Main Menu
-        ChangeGameState(GameState.GamePlay);
+        ChangeGameState(GameState.MainMenu);
         
     }//end Start()
     

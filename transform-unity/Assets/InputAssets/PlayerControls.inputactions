@@ -148,6 +148,45 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "UI",
+            "id": "04f9529a-85e9-49c9-bfc1-7d71475ef2d6",
+            "actions": [
+                {
+                    "name": "Play",
+                    "type": "Button",
+                    "id": "613ca20b-745c-4031-9b84-674aefc27d6e",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "66ef2bcf-8a99-4722-800d-e5184fdf381d",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Play",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "17d4a266-c4ce-41a9-b66a-f48d8d5d3987",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Play",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [
