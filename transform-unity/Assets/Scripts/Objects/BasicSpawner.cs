@@ -24,7 +24,7 @@ public class BasicSpawner : MonoBehaviour
     private GameObject _spawnObject;
     
     [SerializeField]
-    [Tooltip("Spawn Point or Points")]
+    [Tooltip("Optional spawn points. If none are assigned, the spawner's own position will be used.")]
     private List<Transform> _spawnPoints;
     
     private int _spawnPointsIndex = 0;
@@ -55,7 +55,12 @@ public class BasicSpawner : MonoBehaviour
         
     } //end Start()
 
-
+    /// <summary>
+    /// Continuously spawns objects at a set interval until stopped manually.
+    /// </summary>
+    /// <returns>
+    /// Coroutine that yields between spawn cycles for the specified delay.
+    /// </returns>
     private IEnumerator SpawnLoop()
     {
         // Loop forever (or until you stop it manually)
@@ -66,9 +71,8 @@ public class BasicSpawner : MonoBehaviour
         }
     }
         
-   private void  SpawnObject([CanBeNull] Transform spawnPoint)
+    public void  SpawnObject()
     {
-        
         if (_spawnPoints == null || _spawnPoints.Count == 0 || _spawnObject == null)
         {
             Debug.LogWarning("Missing spawn points or spawn object.");
@@ -76,12 +80,11 @@ public class BasicSpawner : MonoBehaviour
         }
         
         // Pick a spawn point
-        spawnPoint = _spawnPoints[_spawnPointsIndex];
+        Transform spawnPoint = _spawnPoints[_spawnPointsIndex];
         GameObject spawned = Instantiate(_spawnObject, spawnPoint.position, spawnPoint.rotation);
 
         // Cycle to next spawn point
         _spawnPointsIndex = (_spawnPointsIndex + 1) % _spawnPoints.Count;
     }
-
  
 }//end BasicSpawner

@@ -51,9 +51,12 @@ public class Bomb : MonoBehaviour, IHazard
 
     private void Explode()
     {
-        
+        BasicSpawner _spawner; 
+        if (TryGetComponent<BasicSpawner>(out _spawner))
+        {
+            _spawner.SpawnObject();
+        }
     }
- 
-
+    
  
 }//end Bomb
