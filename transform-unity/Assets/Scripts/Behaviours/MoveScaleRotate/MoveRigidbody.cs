@@ -172,7 +172,7 @@ public class MoveRigidbody : MonoBehaviour
     private void Update()
     {
         
-        Debug.Log(this.name + " velocity: " + _rigidBody.linearVelocity);
+        //Debug.Log(this.name + " velocity: " + _rigidBody.linearVelocity);
         
 #if UNITY_EDITOR
         if (_enableEditorTesting)

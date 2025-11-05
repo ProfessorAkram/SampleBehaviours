@@ -2556,9 +2556,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3aca077f551ddef428513c932708bd37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicSpawner
-  _spawnObject: {fileID: 8637578160912082026, guid: 0b9942a15a4c6924083304a753ada2c0, type: 3}
+  _objectToSpawn: {fileID: 8637578160912082026, guid: 0b9942a15a4c6924083304a753ada2c0, type: 3}
+  _spawnScale: {x: 1, y: 1, z: 1}
   _spawnPoints:
   - {fileID: 627748598}
+  _useRandomPoint: 0
   _spawnOffset: {x: 0, y: 0, z: 0}
   _spawnDelay: 5
   _spawnOnStart: 1
