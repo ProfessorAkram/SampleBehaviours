@@ -27,6 +27,11 @@ public class GameManager: Singleton<GameManager>
     
     // Read-only property that returns true if the game is currently paused
     public bool IsPaused => Time.timeScale == 0;
+
+    [Header("GAME STATES")] 
+    [SerializeField] 
+    [Tooltip("Set the game START state")]
+    private GameState _startGameState;
     
     [Header("Input")]
     [SerializeField]
@@ -90,7 +95,7 @@ public class GameManager: Singleton<GameManager>
     void Start()
     {
         // Set the initial game state to Main Menu
-        ChangeGameState(GameState.MainMenu);
+        ChangeGameState(_startGameState);
         
     }//end Start()
     
