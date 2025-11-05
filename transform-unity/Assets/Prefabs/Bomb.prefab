@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3557099829866938740}
   - component: {fileID: 8284280452806185869}
   - component: {fileID: -2460479992814399610}
+  - component: {fileID: -1867496973797044866}
   m_Layer: 6
   m_Name: Bomb
   m_TagString: Hazard
@@ -175,3 +176,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 740a0fae2bb170748a58ef8120fd1081, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bomb
+  damageAmount: 10
+--- !u!114 &-1867496973797044866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8637578160912082026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aca077f551ddef428513c932708bd37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BasicSpawner
+  _spawnObject: {fileID: 2584144885890085385, guid: 0cce6157f975eee4dbb229fa00f63747, type: 3}
+  _spawnPoints: []
+  _spawnDelay: 0.5

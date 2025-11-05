@@ -13,6 +13,7 @@
 ************************************************************/
 using System.Collections.Generic;
 using System.Collections;
+using JetBrains.Annotations;
 using UnityEngine;
  
 
@@ -32,12 +33,25 @@ public class BasicSpawner : MonoBehaviour
     [Tooltip("Time delay between spawns")]
     private float _spawnDelay = 2f;
 
+    [SerializeField]
+    [Tooltip("Spawn on Start")]
+    private bool _spawnOnStart = true;
+    
+    [SerializeField]
+    [Tooltip("If enabled, the spawner will repeatedly spawn objects at the specified interval. " +
+             "If disabled, it will spawn only once at start.")]
+    private bool _loopSpawn = true;
  
  
     // Start is called once before the first Update
     private void Start()
     {
-        StartCoroutine(SpawnLoop());
+        //Check for continuous spawning
+        if (_loopSpawn)
+        {
+           StartCoroutine(SpawnLoop()); 
+           
+        }//end if(_loopSpawn)
         
     } //end Start()
 
@@ -52,8 +66,9 @@ public class BasicSpawner : MonoBehaviour
         }
     }
         
-   private void  SpawnObject()
+   private void  SpawnObject([CanBeNull] Transform spawnPoint)
     {
+        
         if (_spawnPoints == null || _spawnPoints.Count == 0 || _spawnObject == null)
         {
             Debug.LogWarning("Missing spawn points or spawn object.");
@@ -61,7 +76,7 @@ public class BasicSpawner : MonoBehaviour
         }
         
         // Pick a spawn point
-        Transform spawnPoint = _spawnPoints[_spawnPointsIndex];
+        spawnPoint = _spawnPoints[_spawnPointsIndex];
         GameObject spawned = Instantiate(_spawnObject, spawnPoint.position, spawnPoint.rotation);
 
         // Cycle to next spawn point

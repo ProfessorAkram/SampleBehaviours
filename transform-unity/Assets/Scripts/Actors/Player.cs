@@ -55,18 +55,19 @@ public class Player : MonoBehaviour
 
    private void OnCollisionEnter(Collision other)
    {
-      if (other.gameObject.CompareTag("Hazard"))
+      //Check for IHazard game object
+      if (other.gameObject.TryGetComponent<IHazard>(out IHazard hazard))
       {
-         //Destroy the other game object
-         Destroy(other.gameObject);
+         //Destroy the hazard object
+         hazard.HandleDestroy();
          
-         //Take damage on health
-         _health.TakeDamage(10);
+         //Hazard deals damage on health
+         _health.TakeDamage(hazard.DamageAmount);
          
          //Flash damage color
          _colorFlash.FlashColor();
          
-      }//end if ("Hazard")
+      }//end if (IHazard)
       
    }//end OnCollision Enter
    

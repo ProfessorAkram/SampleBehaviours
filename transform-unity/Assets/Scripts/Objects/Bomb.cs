@@ -15,9 +15,16 @@
 using UnityEngine;
  
 
-public class Bomb : MonoBehaviour
+public class Bomb : MonoBehaviour, IHazard
 {
     private MoveRigidbody _moveRigidbody;
+    
+    [SerializeField] 
+    [Tooltip("The amount of damage hazard deals")]
+    private int damageAmount = 10;
+    public int DamageAmount => damageAmount;
+    
+    
    
     // Start is called once before the first Update
     private void Start()
@@ -31,8 +38,21 @@ public class Bomb : MonoBehaviour
         
     } //end Start()
     
-    
- 
+    /// <summary>
+    /// Called when the hazard is destroyed or triggered. 
+    /// Implement this method to define what happens when the hazard is removed from the scene (e.g., explosion, animation, effects).
+    /// </summary>
+    public void HandleDestroy()
+    {
+        Explode();
+
+    }//end HandleDestroy()
+
+
+    private void Explode()
+    {
+        
+    }
  
 
  

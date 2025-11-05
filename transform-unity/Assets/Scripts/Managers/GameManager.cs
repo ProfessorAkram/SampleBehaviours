@@ -31,14 +31,14 @@ public class GameManager: Singleton<GameManager>
     [Header("GAME STATES")] 
     [SerializeField] 
     [Tooltip("Set the game START state")]
-    private GameState _startGameState;
+    private GameState _startingGameState;
     
-    [Header("Input")]
+    [Header("INPUT")]
     [SerializeField]
     [Tooltip("Reference to the Input Action Asset used to handle pause and other input.")]
     private InputActionAsset _inputActions;
     
-    [Header("Scene Management")]
+    [Header("SCENE MANAGEMENT")]
     [SerializeField]
     [Tooltip("The main menu scene that loads when the game starts.")]
     private string _mainMenuScene;
@@ -95,7 +95,7 @@ public class GameManager: Singleton<GameManager>
     void Start()
     {
         // Set the initial game state to Main Menu
-        ChangeGameState(_startGameState);
+        ChangeGameState(_startingGameState);
         
     }//end Start()
     
