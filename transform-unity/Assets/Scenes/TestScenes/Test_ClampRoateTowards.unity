@@ -935,6 +935,10 @@ PrefabInstance:
       propertyPath: _startGameState
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3740279925742070971, guid: 53632aa35d79760469e696da01645c33, type: 3}
+      propertyPath: _startingGameState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3807973470190169416, guid: 53632aa35d79760469e696da01645c33, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.78497
@@ -2555,7 +2559,10 @@ MonoBehaviour:
   _spawnObject: {fileID: 8637578160912082026, guid: 0b9942a15a4c6924083304a753ada2c0, type: 3}
   _spawnPoints:
   - {fileID: 627748598}
+  _spawnOffset: {x: 0, y: 0, z: 0}
   _spawnDelay: 5
+  _spawnOnStart: 1
+  _loopSpawn: 1
 --- !u!1 &1219919247 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7833812777858497231, guid: 15facac45049d1148a79a4a66c56a80a, type: 3}

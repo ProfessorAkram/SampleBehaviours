@@ -15,7 +15,8 @@ using System.Collections.Generic;
 using System.Collections;
 using JetBrains.Annotations;
 using UnityEngine;
- 
+using Quaternion = System.Numerics.Quaternion;
+
 
 public class BasicSpawner : MonoBehaviour
 {
@@ -24,10 +25,18 @@ public class BasicSpawner : MonoBehaviour
     private GameObject _spawnObject;
     
     [SerializeField]
-    [Tooltip("Optional spawn points. If none are assigned, the spawner's own position will be used.")]
+    [Tooltip("List of spawn points")]
     private List<Transform> _spawnPoints;
     
+    [SerializeField]
+    [Tooltip("Optional: Choose a random spawn point from list.")]
+    private bool _useRandomPoint = false;
+    
     private int _spawnPointsIndex = 0;
+    
+    [SerializeField]
+    [Tooltip("Optional: Offset applied to the spawn position (relative to the spawn point).")]
+    private Vector3 _spawnOffset = Vector3.zero;
     
     [SerializeField]
     [Tooltip("Time delay between spawns")]
@@ -71,20 +80,60 @@ public class BasicSpawner : MonoBehaviour
         }
     }
         
-    public void  SpawnObject()
+    /// <summary>
+    /// Spawns the assigned object at a given position and rotation.
+    /// If no position or rotation is provided, uses the next spawn point or the spawner's transform.
+    /// Optionally applies a custom scale.
+    /// </summary>
+    /// <param name="spawnPosition">Optional world position for the spawn. Uses spawn point if not set.</param>
+    /// <param name="spawnRotation">Optional rotation for the spawn. Uses spawn point if not set.</param>
+    /// <param name="spawnScale">Optional scale for the spawned object.</param>
+    public void SpawnObject(Vector3? spawnPosition = null, Quaternion? spawnRotation = null, Vector3? spawnScale = null)
     {
-        if (_spawnPoints == null || _spawnPoints.Count == 0 || _spawnObject == null)
+        if (_spawnObject == null)
         {
-            Debug.LogWarning("Missing spawn points or spawn object.");
+            Debug.LogWarning("Missing spawn object.");
             return;
         }
         
+        
         // Pick a spawn point
-        Transform spawnPoint = _spawnPoints[_spawnPointsIndex];
-        GameObject spawned = Instantiate(_spawnObject, spawnPoint.position, spawnPoint.rotation);
+        
+        spawnPosition = spawnPoint.position + _spawnOffset;
+        spawnRotation = spawnPoint.rotation;
+        GameObject spawned = Instantiate(_spawnObject, spawnPosition, spawnPoint.rotation);
 
-        // Cycle to next spawn point
-        _spawnPointsIndex = (_spawnPointsIndex + 1) % _spawnPoints.Count;
+
     }
+
+    private Vector3 GetSpawnPosition(Vector3? spawnPosition = null)
+    {
+        Transform spawnPoint;
+        
+        //Check for spawn points
+        if (spawnPosition == null && _spawnPoints != null && _spawnPoints.Count > 0)
+        {
+            //If spawn points are random
+            if (_useRandomPoint)
+            {
+                _spawnPointsIndex = Random.Range(0, _spawnPoints.Count);
+            }
+            else
+            {
+                // Cycle to next spawn point
+                _spawnPointsIndex = (_spawnPointsIndex + 1) % _spawnPoints.Count;
+            }
+            
+            spawnPoint = _spawnPoints[_spawnPointsIndex];
+
+        }
+        else if(spawnPosition != null)
+        {
+           spawnPoint.position = spawnPosition;
+        }
+
+        
+    }//end GetSpawnPosition
+    
  
 }//end BasicSpawner
