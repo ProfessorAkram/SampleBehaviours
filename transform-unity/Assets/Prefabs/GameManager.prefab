@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3807973470190169416}
   - component: {fileID: 3740279925742070971}
+  - component: {fileID: 7956917460187451500}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -44,10 +45,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68a85b74f5c90614a9f15f71bd771e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  _startingGameState: 2
+  _inputActions: {fileID: -944628639613478452, guid: a6fc5df8c5edade4eae43b176df47ab5, type: 3}
+  _defaultSceneTransition: {fileID: 11400000, guid: 013263c83b6a84c4d95beaa8bd163ac8, type: 2}
   _mainMenuScene: MainMenu
   _hudScene: HUD
   _pauseMenuScene: PauseMenu
-  _gameOverScene: GameOver
+  _gameOverScene: MainMenu
   _gameLevels:
   - Test_MoveTransform
   - Test_LookAtFree
+--- !u!114 &7956917460187451500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6052432557895826154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61430b0086307cc4da3ccc8d39ae88da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EasyTransition.TransitionManager
+  transitionTemplate: {fileID: 5276914992623515724, guid: 616d511151a6c554caddf1c754e4f91d, type: 3}

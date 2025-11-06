@@ -132,6 +132,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -944628639613478452, guid: a6fc5df8c5edade4eae43b176df47ab5, type: 3}
     - target: {fileID: 3740279925742070971, guid: 53632aa35d79760469e696da01645c33, type: 3}
+      propertyPath: _gameOverScene
+      value: GameOver
+      objectReference: {fileID: 0}
+    - target: {fileID: 3740279925742070971, guid: 53632aa35d79760469e696da01645c33, type: 3}
+      propertyPath: _startingGameState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3740279925742070971, guid: 53632aa35d79760469e696da01645c33, type: 3}
+      propertyPath: _defaultSceneTransition
+      value: 
+      objectReference: {fileID: 11400000, guid: 057babd6f13132c449650d99e3c4e99c, type: 2}
+    - target: {fileID: 3740279925742070971, guid: 53632aa35d79760469e696da01645c33, type: 3}
       propertyPath: '_gameLevels.Array.data[0]'
       value: Test_ClampRoateTowards
       objectReference: {fileID: 0}
@@ -179,7 +191,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7956917460187451500, guid: 53632aa35d79760469e696da01645c33, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

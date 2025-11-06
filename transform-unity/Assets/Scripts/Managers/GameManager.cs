@@ -14,7 +14,7 @@
 *
 ************************************************************/
  
-using System.Collections.Generic; 
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
@@ -37,8 +37,9 @@ public class GameManager: Singleton<GameManager>
     [SerializeField]
     [Tooltip("Reference to the Input Action Asset used to handle pause and other input.")]
     private InputActionAsset _inputActions;
-    
+
     [Header("SCENE MANAGEMENT")]
+    
     [SerializeField]
     [Tooltip("The main menu scene that loads when the game starts.")]
     private string _mainMenuScene;
@@ -68,7 +69,7 @@ public class GameManager: Singleton<GameManager>
     //List of all loaded scenes
     private List<string> _loadedScenes = new List<string>();
     
-    
+
     
     private void OnEnable()
     {
@@ -154,6 +155,7 @@ public class GameManager: Singleton<GameManager>
 
         // Short delay before managing game state
         Invoke("ManageGameState", 1f);
+        
     }//end ChangeGameState
     
     /// <summary>
