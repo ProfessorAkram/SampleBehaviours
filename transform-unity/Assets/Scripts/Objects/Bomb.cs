@@ -25,7 +25,6 @@ public class Bomb : MonoBehaviour, IHazard
     public int DamageAmount => damageAmount;
     
     
-   
     // Start is called once before the first Update
     private void Start()
     {
@@ -51,12 +50,15 @@ public class Bomb : MonoBehaviour, IHazard
 
     private void Explode()
     {
-        BasicSpawner _spawner; 
-        if (TryGetComponent<BasicSpawner>(out _spawner))
+        ObjectSpawner _spawner; 
+        if (TryGetComponent<ObjectSpawner>(out _spawner))
         {
             _spawner.SpawnObject();
         }
-    }
+        
+        Destroy(gameObject);
+        
+    }//end Explode()
     
  
 }//end Bomb

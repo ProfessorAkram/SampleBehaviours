@@ -190,11 +190,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicSpawner
   _objectToSpawn: {fileID: 2584144885890085385, guid: 0cce6157f975eee4dbb229fa00f63747, type: 3}
-  _spawnScale: {x: 0.5, y: 0.5, z: 0.5}
+  _spawnScale: 0.5
   _spawnPoints:
   - {fileID: 3010239072308147306}
-  _useRandomPoint: 0
-  _spawnOffset: {x: 0, y: 0, z: 2}
-  _spawnDelay: 0.5
+  _useRandomSpawnPoint: 0
+  _spawnOffset: {x: 0, y: 2, z: 2}
   _spawnOnStart: 0
-  _loopSpawn: 0
+  _loopSpawning: 0
+  _spawnDelay: 0.5

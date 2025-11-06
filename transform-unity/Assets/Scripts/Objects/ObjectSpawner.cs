@@ -1,7 +1,7 @@
 /************************************************************
 * COPYRIGHT:  Year
 * PROJECT: Name of Project or Assignment
-* FILE NAME: BasicSpawner.cs
+* FILE NAME: ObjectSpawner.cs
 * DESCRIPTION: Short Description of script.
 *                   
 * REVISION HISTORY:
@@ -17,36 +17,37 @@ using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public class BasicSpawner : MonoBehaviour
+public class ObjectSpawner : MonoBehaviour
 {
-    [FormerlySerializedAs("_spawnedObject")]
+    [Header("OBJECT TO SPAWN")]
     [SerializeField]
     [Tooltip("GameObject to spawn")]
     private GameObject _objectToSpawn;
     
-    [FormerlySerializedAs("_objectScale")]
+    [FormerlySerializedAs("_scale")]
     [SerializeField]
     [Tooltip("Scale of the spawned object")]
-    private Vector3 _spawnScale = Vector3.one;
+    [Range(0,1)]
+    private float _spawnScale = 1;
     
+    [Header("SPAWN POINTS")]
     [SerializeField]
     [Tooltip("List of spawn points")]
     private List<Transform> _spawnPoints;
     
+    [FormerlySerializedAs("_useRandomPoint")]
     [SerializeField]
     [Tooltip("Optional: Choose a random spawn point from list.")]
-    private bool _useRandomPoint = false;
+    private bool _useRandomSpawnPoint = false;
     
-    private int _spawnPointsIndex = 0;
+    private int _spawnPointIndex = 0;
     
     [SerializeField]
     [Tooltip("Optional: Offset applied to the spawn position (relative to the spawn point).")]
     private Vector3 _spawnOffset = Vector3.zero;
     
-    [SerializeField]
-    [Tooltip("Time delay between spawns")]
-    private float _spawnDelay = 2f;
-
+    
+    [Header("SPAWN BEHAVIORS")]
     [SerializeField]
     [Tooltip("Spawn on Start")]
     private bool _spawnOnStart = true;
@@ -54,14 +55,18 @@ public class BasicSpawner : MonoBehaviour
     [SerializeField]
     [Tooltip("If enabled, the spawner will repeatedly spawn objects at the specified interval. " +
              "If disabled, it will spawn only once at start.")]
-    private bool _loopSpawn = true;
+    private bool _loopSpawning = true;
+    
+    [SerializeField]
+    [Tooltip("Time delay between spawns")]
+    private float _spawnDelay = 2f;
  
  
     // Start is called once before the first Update
     private void Start()
     {
         //Check for continuous spawning
-        if (_loopSpawn)
+        if (_loopSpawning)
         {
            StartCoroutine(SpawnLoop()); 
            
@@ -106,12 +111,12 @@ public class BasicSpawner : MonoBehaviour
         Quaternion rotation = Quaternion.identity;
 
         // Instantiate the object
-        GameObject spawned = Instantiate(_objectToSpawn, position, rotation);
+        GameObject spawnedObject = Instantiate(_objectToSpawn, position, rotation);
      
         // Apply scale if specified
-        spawned.transform.localScale = _spawnScale;
-     
-
+        Vector3 spawnedObjectScale = spawnedObject.transform.localScale * _spawnScale;
+        spawnedObject.transform.localScale = spawnedObjectScale;
+        
     }//end SpawnObject()
 
 
@@ -122,21 +127,21 @@ public class BasicSpawner : MonoBehaviour
         if (_spawnPoints != null && _spawnPoints.Count > 0)
         {
             //If spawn points are random
-            if (_useRandomPoint)
+            if (_useRandomSpawnPoint)
             {
                 //Pick a random index
-                _spawnPointsIndex = Random.Range(0, _spawnPoints.Count);
+                _spawnPointIndex = Random.Range(0, _spawnPoints.Count);
                 
             }//end if (_useRandomPoint)
             
             //Get the spawn point position
-            Vector3 pointPosition = _spawnPoints[_spawnPointsIndex].position;
+            Vector3 pointPosition = _spawnPoints[_spawnPointIndex].position;
             Debug.Log($"Spawn position: {pointPosition}");
             
             // If not random, increment the index AFTER spawning
-            if (!_useRandomPoint)
+            if (!_useRandomSpawnPoint)
             {
-                _spawnPointsIndex = (_spawnPointsIndex + 1) % _spawnPoints.Count;
+                _spawnPointIndex = (_spawnPointIndex + 1) % _spawnPoints.Count;
             }//end if (!_useRandomPoint)
 
             //Set spawn point + offset
@@ -150,4 +155,4 @@ public class BasicSpawner : MonoBehaviour
     }//end GetSpawnPosition
     
  
-}//end BasicSpawner
+}//end ObjectSpawner

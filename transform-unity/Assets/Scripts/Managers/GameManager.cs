@@ -152,8 +152,8 @@ public class GameManager: Singleton<GameManager>
         // Update the current state and manage scenes
         CurrentState = newState;
 
-        ManageGameState();
-
+        // Short delay before managing game state
+        Invoke("ManageGameState", 1f);
     }//end ChangeGameState
     
     /// <summary>
