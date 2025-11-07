@@ -6,256 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="56a078e9-7ef3-4647-96fa-a81ff3a52553" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.transform-unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.transform-unity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Demo.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Demo/DemoLoadScene.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Demo/DemoLoadScene.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Demo/TransitionDemo.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Demo/TransitionDemo.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Documentation.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Documentation.pdf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Editor/TransitionManagerEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Editor/TransitionManagerEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Editor/TransitionSettingsEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Editor/TransitionSettingsEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Materials/TransitionUIAdditiveColor.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Materials/TransitionUIAdditiveColor.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Materials/TransitionUIMultiplyColor.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Materials/TransitionUIMultiplyColor.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Prefabs/TransitionTemplate.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Prefabs/TransitionTemplate.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Scripts/CutoutMaskUI.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Scripts/CutoutMaskUI.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Scripts/Transition.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Scripts/Transition.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Scripts/TransitionManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Scripts/TransitionManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Scripts/TransitionSettings.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Scripts/TransitionSettings.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Shaders.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Shaders/AdditiveColor.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Shaders/AdditiveColor.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Shaders/MultiplyColor.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Shaders/MultiplyColor.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Sprites.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Sprites/SettingsIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Sprites/SettingsIcon.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Sprites/SlicedCircle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Sprites/SlicedCircle.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Sprites/TransitionDemoLogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Sprites/TransitionDemoLogo.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Sprites/TransitionIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Sprites/TransitionIcon.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Sprites/TransitionManagerSettingsLogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Sprites/TransitionManagerSettingsLogo.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Sprites/TransitionPrefabIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Sprites/TransitionPrefabIcon.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Brush.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Brush/Brush.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Brush/Brush.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Brush/BrushIN.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Brush/BrushIN.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Brush/BrushIN.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Brush/BrushIN.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Brush/BrushIn.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Brush/BrushIn.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Brush/BrushOUT.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Brush/BrushOUT.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Brush/BrushOUT.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Brush/BrushOUT.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Brush/BrushOut.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Brush/BrushOut.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Brush/BrushTransitionAnimation.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Brush/BrushTransitionAnimation.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/CircleWipe.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/CircleWipe/CircleIN.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/CircleWipe/CircleIN.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/CircleWipe/CircleIN.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/CircleWipe/CircleIN.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/CircleWipe/CircleIn.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/CircleWipe/CircleIn.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/CircleWipe/CircleOUT.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/CircleWipe/CircleOUT.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/CircleWipe/CircleOUT.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/CircleWipe/CircleOUT.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/CircleWipe/CircleOut.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/CircleWipe/CircleOut.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/CircleWipe/CircleWipe.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/CircleWipe/CircleWipe.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/DiagonalRectangleGrid.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/DiagonalRectangleGrid/DiagonalRectangleGrid.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/DiagonalRectangleGrid/DiagonalRectangleGrid.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/DiagonalRectangleGrid/DiagonalRectangleGridIN.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/DiagonalRectangleGrid/DiagonalRectangleGridIN.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/DiagonalRectangleGrid/DiagonalRectangleGridIN.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/DiagonalRectangleGrid/DiagonalRectangleGridIN.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/DiagonalRectangleGrid/DiagonalRectangleGridIn.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/DiagonalRectangleGrid/DiagonalRectangleGridIn.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/DiagonalRectangleGrid/DiagonalRectangleGridOUT.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/DiagonalRectangleGrid/DiagonalRectangleGridOUT.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/DiagonalRectangleGrid/DiagonalRectangleGridOUT.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/DiagonalRectangleGrid/DiagonalRectangleGridOUT.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/DiagonalRectangleGrid/DiagonalRectangleGridOut.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/DiagonalRectangleGrid/DiagonalRectangleGridOut.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/DiagonalRectangleGrid/DiagonalRectangleGridTransitionAnimation.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/DiagonalRectangleGrid/DiagonalRectangleGridTransitionAnimation.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/DoubleWipe.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/DoubleWipe/DoubleWipe.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/DoubleWipe/DoubleWipe.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/DoubleWipe/DoubleWipeIN.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/DoubleWipe/DoubleWipeIN.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/DoubleWipe/DoubleWipeIN.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/DoubleWipe/DoubleWipeIN.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/DoubleWipe/DoubleWipeIn.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/DoubleWipe/DoubleWipeIn.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/DoubleWipe/DoubleWipeOUT.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/DoubleWipe/DoubleWipeOUT.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/DoubleWipe/DoubleWipeOUT.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/DoubleWipe/DoubleWipeOUT.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/DoubleWipe/DoubleWipeOut.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/DoubleWipe/DoubleWipeOut.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/DoubleWipe/DoubleWipeTransitionAnimation.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/DoubleWipe/DoubleWipeTransitionAnimation.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Fade.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Fade/Fade.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Fade/Fade.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Fade/FadeIN.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Fade/FadeIN.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Fade/FadeIN.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Fade/FadeIN.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Fade/FadeIn.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Fade/FadeIn.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Fade/FadeOUT.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Fade/FadeOUT.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Fade/FadeOUT.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Fade/FadeOUT.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Fade/FadeOut.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Fade/FadeOut.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/HorizontalCurtain.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/HorizontalCurtain/HorizontalCurtain.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/HorizontalCurtain/HorizontalCurtain.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/HorizontalCurtain/HorizontalCurtainIN.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/HorizontalCurtain/HorizontalCurtainIN.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/HorizontalCurtain/HorizontalCurtainIN.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/HorizontalCurtain/HorizontalCurtainIN.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/HorizontalCurtain/HorizontalCurtainIn.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/HorizontalCurtain/HorizontalCurtainIn.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/HorizontalCurtain/HorizontalCurtainOUT.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/HorizontalCurtain/HorizontalCurtainOUT.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/HorizontalCurtain/HorizontalCurtainOUT.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/HorizontalCurtain/HorizontalCurtainOUT.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/HorizontalCurtain/HorizontalCurtainOut.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/HorizontalCurtain/HorizontalCurtainOut.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/HorizontalCurtain/HorizontalCurtainTransitionAnimation.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/HorizontalCurtain/HorizontalCurtainTransitionAnimation.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/LinearWipe.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/LinearWipe/LinearWipe.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/LinearWipe/LinearWipe.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/LinearWipe/LinearWipeTransitionAnimation.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/LinearWipe/LinearWipeTransitionAnimation.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/LinearWipe/WipeIN.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/LinearWipe/WipeIN.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/LinearWipe/WipeIN.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/LinearWipe/WipeIN.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/LinearWipe/WipeIn.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/LinearWipe/WipeIn.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/LinearWipe/WipeOUT.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/LinearWipe/WipeOUT.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/LinearWipe/WipeOUT.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/LinearWipe/WipeOUT.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/LinearWipe/WipeOut.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/LinearWipe/WipeOut.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Noise.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Noise/Noise.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Noise/Noise.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Noise/NoiseIN.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Noise/NoiseIN.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Noise/NoiseIN.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Noise/NoiseIN.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Noise/NoiseIn.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Noise/NoiseIn.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Noise/NoiseOUT.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Noise/NoiseOUT.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Noise/NoiseOUT.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Noise/NoiseOUT.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Noise/NoiseOut.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Noise/NoiseOut.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Noise/NoiseTransitionAnimation.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/Noise/NoiseTransitionAnimation.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/PaintSplash.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/PaintSplash/PaintSplash.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/PaintSplash/PaintSplash.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/PaintSplash/PaintSplashIN.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/PaintSplash/PaintSplashIN.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/PaintSplash/PaintSplashIN.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/PaintSplash/PaintSplashIN.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/PaintSplash/PaintSplashIn.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/PaintSplash/PaintSplashIn.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/PaintSplash/PaintSplashOut.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/PaintSplash/PaintSplashOut.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/PaintSplash/PaintSplashOut.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/PaintSplash/PaintSplashOut.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/PaintSplash/PaintSplashOut.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/PaintSplash/PaintSplashOut.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/PaintSplash/PaintSplashTransitionAnimation.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/PaintSplash/PaintSplashTransitionAnimation.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/RectangleGrid.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/RectangleGrid/RectangleGrid.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/RectangleGrid/RectangleGrid.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/RectangleGrid/RectangleGridIN.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/RectangleGrid/RectangleGridIN.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/RectangleGrid/RectangleGridIN.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/RectangleGrid/RectangleGridIN.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/RectangleGrid/RectangleGridIn.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/RectangleGrid/RectangleGridIn.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/RectangleGrid/RectangleGridOUT.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/RectangleGrid/RectangleGridOUT.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/RectangleGrid/RectangleGridOUT.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/RectangleGrid/RectangleGridOUT.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/RectangleGrid/RectangleGridOut.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/RectangleGrid/RectangleGridOut.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/RectangleGrid/RectangleGridTransitionAnimation.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/RectangleGrid/RectangleGridTransitionAnimation.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/RectangleWipe.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/RectangleWipe/RectangleIN.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/RectangleWipe/RectangleIN.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/RectangleWipe/RectangleIN.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/RectangleWipe/RectangleIN.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/RectangleWipe/RectangleIn.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/RectangleWipe/RectangleIn.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/RectangleWipe/RectangleOUT.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/RectangleWipe/RectangleOUT.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/RectangleWipe/RectangleOUT.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/RectangleWipe/RectangleOUT.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/RectangleWipe/RectangleOut.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/RectangleWipe/RectangleOut.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/RectangleWipe/RectangleWipe.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/RectangleWipe/RectangleWipe.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/VerticalCurtain.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/VerticalCurtain/VerticalCurtain.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/VerticalCurtain/VerticalCurtain.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/VerticalCurtain/VerticalCurtainIN.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/VerticalCurtain/VerticalCurtainIN.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/VerticalCurtain/VerticalCurtainIN.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/VerticalCurtain/VerticalCurtainIN.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/VerticalCurtain/VerticalCurtainIn.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/VerticalCurtain/VerticalCurtainIn.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/VerticalCurtain/VerticalCurtainOUT.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/VerticalCurtain/VerticalCurtainOUT.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/VerticalCurtain/VerticalCurtainOUT.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/VerticalCurtain/VerticalCurtainOUT.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/VerticalCurtain/VerticalCurtainOut.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/VerticalCurtain/VerticalCurtainOut.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/VerticalCurtain/VerticalCurtainTransitionAnimation.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EasyTransitions/Transitions/VerticalCurtain/VerticalCurtainTransitionAnimation.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GameManager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScenes/Test_ClampRoateTowards.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScenes/Test_ClampRoateTowards.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/Health.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Objects/Bomb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Objects/Bomb.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -271,12 +24,12 @@
     &quot;assignee&quot;: &quot;ProfessorAkram&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ProfessorAkram/Transform.git",
-    "accountId": "eadfa71c-7c41-43f0-bdab-a029ea234138"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ProfessorAkram/Transform.git&quot;,
+    &quot;accountId&quot;: &quot;eadfa71c-7c41-43f0-bdab-a029ea234138&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Behaviours/Health.cs" root0="FORCE_HIGHLIGHTING" />
@@ -384,6 +137,7 @@
       <workItem from="1762371712935" duration="1709000" />
       <workItem from="1762450045585" duration="2207000" />
       <workItem from="1762458787538" duration="1780000" />
+      <workItem from="1762469991584" duration="3748000" />
     </task>
     <servers />
   </component>

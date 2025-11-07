@@ -21,22 +21,6 @@ public class Player : MonoBehaviour
    private Health _health;
    private ColorFlash _colorFlash;
    
-   private void OnEnable()
-   {
-      //Subscribe to Heath
-      if (_health != null)
-         _health.OnDied += HandleDeath;
-      
-   }//end OnEnable()
-
-   private void OnDisable()
-   {
-      //Unsubscribe to Health
-      if (_health != null)
-         _health.OnDied -= HandleDeath;
-      
-   }//end OnDisable()
-
    private void Awake()
    {
       //Check and assign Health component
@@ -53,23 +37,37 @@ public class Player : MonoBehaviour
       
    }//end Awake()
 
-   private void OnCollisionEnter(Collision other)
+   
+   private void OnEnable()
    {
-      //Check for IHazard game object
-      if (other.gameObject.TryGetComponent<IHazard>(out IHazard hazard))
-      {
-         //Destroy the hazard object
-         hazard.HandleDestroy();
-         
-         //Hazard deals damage on health
-         _health.TakeDamage(hazard.DamageAmount);
-         
-         //Flash damage color
-         _colorFlash.FlashColor();
-         
-      }//end if (IHazard)
+      //Subscribe to Heath
+      if (_health != null)
+         _health.OnDamaged += HandleDamage;
+         _health.OnDied += HandleDeath;
       
-   }//end OnCollision Enter
+   }//end OnEnable()
+
+   private void OnDisable()
+   {
+      //Unsubscribe to Health
+      if (_health != null)
+      {
+         _health.OnDamaged += HandleDamage;
+         _health.OnDied -= HandleDeath;
+      }
+
+      
+   }//end OnDisable()
+
+
+
+   private void HandleDamage()
+   {
+      //Flash damage color
+      _colorFlash.FlashColor();
+      
+   }//end HandleDamage()
+   
    
    private void HandleDeath()
    {

@@ -16,7 +16,7 @@ using System;
 using UnityEngine;
 
 
-public class Health : MonoBehaviour
+public class Health : MonoBehaviour ,IDamageable
 {
     [SerializeField] 
     [Tooltip("Maiximum Health")]
@@ -33,8 +33,8 @@ public class Health : MonoBehaviour
     public int CurrentHealth => currentHealth;
     public int MaxHealth => maxHealth;
     
-    //Flag that returns true if the object is dead (health <= 0)
-    public bool IsDead => currentHealth <= 0;
+    //Flag that returns true if the object is alive
+    public bool IsAlive => currentHealth >= 0;
 
     // Events for others to subscribe to
     public event Action OnDamaged;
@@ -53,20 +53,19 @@ public class Health : MonoBehaviour
     /// <param name="amount">The amount of damage to apply.</param>
     public void TakeDamage(int amount)
     {
+        //Return if object is not alive
+        if (!IsAlive) return;
 
         // Prevent negative health
         currentHealth = Mathf.Max(currentHealth - amount, 0);
         
         // Notify subscribers
         OnDamaged?.Invoke();
-
-        //If out of health die
-        if (IsDead)
-        {
-            Die();
-            
-        }//end if(IsDead)
         
+        //Check if object dies
+        if (currentHealth <= 0)
+            Die();
+
         Debug.Log("Damage Taken! Current Health " + CurrentHealth);
         
     }//end TakeDamage
@@ -77,7 +76,8 @@ public class Health : MonoBehaviour
     /// <param name="amount">The amount to heal.</param>
     public void Heal(int amount)
     {
-        if (IsDead) return;
+        //Return if object is not alive
+        if (!IsAlive) return;
 
         // Prevent health from exceeding max health
         currentHealth = Mathf.Min(currentHealth + amount, maxHealth);
@@ -93,10 +93,8 @@ public class Health : MonoBehaviour
 
         //if destroy on death, destroy object
         if (_destroyOnDeath)
-        {
             Destroy(gameObject);
-        }
-        
+
     }//end Die()
     
 }//end Health

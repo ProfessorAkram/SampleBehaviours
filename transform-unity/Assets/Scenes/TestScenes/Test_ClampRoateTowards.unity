@@ -923,6 +923,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3740279925742070971, guid: 53632aa35d79760469e696da01645c33, type: 3}
+      propertyPath: _gameLevels.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3807973470190169416, guid: 53632aa35d79760469e696da01645c33, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.78497
@@ -967,7 +971,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7956917460187451500, guid: 53632aa35d79760469e696da01645c33, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2404,22 +2409,19 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7833812777858497231, guid: 15facac45049d1148a79a4a66c56a80a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1219919249}
+      addedObject: {fileID: 1219919268}
     - targetCorrespondingSourceObject: {fileID: 7833812777858497231, guid: 15facac45049d1148a79a4a66c56a80a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1219919253}
+      addedObject: {fileID: 1219919267}
     - targetCorrespondingSourceObject: {fileID: 7833812777858497231, guid: 15facac45049d1148a79a4a66c56a80a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1219919254}
+      addedObject: {fileID: 1219919266}
     - targetCorrespondingSourceObject: {fileID: 7833812777858497231, guid: 15facac45049d1148a79a4a66c56a80a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1219919259}
+      addedObject: {fileID: 1219919265}
     - targetCorrespondingSourceObject: {fileID: 7833812777858497231, guid: 15facac45049d1148a79a4a66c56a80a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1219919258}
-    - targetCorrespondingSourceObject: {fileID: 7833812777858497231, guid: 15facac45049d1148a79a4a66c56a80a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1219919260}
+      addedObject: {fileID: 1219919264}
   m_SourcePrefab: {fileID: 100100000, guid: 15facac45049d1148a79a4a66c56a80a, type: 3}
 --- !u!4 &1191404109 stripped
 Transform:
@@ -2554,7 +2556,63 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7833812777858497231, guid: 15facac45049d1148a79a4a66c56a80a, type: 3}
   m_PrefabInstance: {fileID: 1191404108}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1219919249
+--- !u!114 &1219919264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219919247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b6e527ab4f921040b0053f00404cce0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ColorFlash
+  _flashColor: {r: 1, g: 0, b: 0, a: 1}
+  _flashDuration: 0.1
+--- !u!114 &1219919265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219919247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1caf55c722d1994599b64930b4ccc96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  maxHealth: 100
+  _destroyOnDeath: 0
+--- !u!114 &1219919266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219919247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d799e983c6642f4a92b4aae8bae3f8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+--- !u!114 &1219919267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219919247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14609c5f764c5124581008837081c350, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MoveTransform
+  _useTranslate: 0
+  _speed: 5
+  _direction: {x: 1, y: 0, z: 0}
+  _moveOnAwake: 1
+--- !u!114 &1219919268
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2584,74 +2642,6 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &1219919253
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1219919247}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d799e983c6642f4a92b4aae8bae3f8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
---- !u!114 &1219919254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1219919247}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14609c5f764c5124581008837081c350, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MoveTransform
-  _useTranslate: 0
-  _speed: 5
-  _direction: {x: 1, y: 0, z: 0}
-  _moveOnAwake: 0
---- !u!114 &1219919258
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1219919247}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b6e527ab4f921040b0053f00404cce0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorFlash
-  _flashColor: {r: 1, g: 0, b: 0, a: 1}
-  _flashDuration: 0.1
---- !u!114 &1219919259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1219919247}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1caf55c722d1994599b64930b4ccc96, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Health
-  maxHealth: 10
-  _destroyOnDeath: 0
---- !u!114 &1219919260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1219919247}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16218c0696e381a499e111a66cefdffc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Player
 --- !u!1001 &1406029034
 PrefabInstance:
   m_ObjectHideFlags: 0
