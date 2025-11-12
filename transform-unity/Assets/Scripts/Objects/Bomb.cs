@@ -12,6 +12,7 @@
 *
 ************************************************************/
 
+using System;
 using Unity.VisualScripting;
 using UnityEngine;
  
@@ -19,7 +20,6 @@ using UnityEngine;
 public class Bomb : MonoBehaviour
 {
     private MoveRigidbody _moveRigidbody;
-    
 
     
     // Start is called once before the first Update
@@ -47,6 +47,7 @@ public class Bomb : MonoBehaviour
         Destroy(gameObject);
         
     }//end Explode()
-    
- 
+
+
+
 }//end Bomb

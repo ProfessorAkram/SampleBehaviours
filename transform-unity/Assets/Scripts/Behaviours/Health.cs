@@ -19,7 +19,7 @@ using UnityEngine;
 public class Health : MonoBehaviour ,IDamageable
 {
     [SerializeField] 
-    [Tooltip("Maiximum Health")]
+    [Tooltip("Maximum Health")]
     [Range(0,100)]
     private int maxHealth = 100;
     
@@ -70,7 +70,7 @@ public class Health : MonoBehaviour ,IDamageable
         
     }//end TakeDamage
     
-    // <summary>
+    /// <summary>
     /// Increases health by a specified amount, without exceeding maxHealth.
     /// </summary>
     /// <param name="amount">The amount to heal.</param>

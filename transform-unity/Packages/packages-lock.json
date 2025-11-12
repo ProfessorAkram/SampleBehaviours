@@ -5,7 +5,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "a6a6d95bccc8ce597da2843a75366141176346a3"
+      "hash": "0fba2e1b1da27648307eef4a57668ae850cbaa32"
     },
     "com.unity.ai.assistant": {
       "version": "1.0.0-pre.12",
